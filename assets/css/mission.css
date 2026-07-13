@@ -1,0 +1,38 @@
+.mission-page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.mission-hero {
+  background: var(--light-bg);
+  padding: 60px 40px;
+  border-radius: 8px;
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.mission-quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--primary);
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.mission-body {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  text-align: left;
+  line-height: 1.8;
+}
+
+.mission-body h3 {
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
