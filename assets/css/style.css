@@ -141,13 +141,16 @@ section { padding: 80px 10%; }
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(10, 37, 64, 0.08);
   height: 100%;
+}
+
+.service.service-summary {
   position: relative;
   overflow: hidden;
   isolation: isolate;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service::before {
+.service.service-summary::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -171,8 +174,8 @@ section { padding: 80px 10%; }
   box-shadow: 0 12px 28px rgba(10, 37, 64, 0.12);
 }
 
-.service-link:hover .service::before,
-.service-link:focus-visible .service::before {
+.service-link:hover .service.service-summary::before,
+.service-link:focus-visible .service.service-summary::before {
   animation-duration: 2.4s;
   opacity: 0.24;
 }
@@ -214,16 +217,16 @@ section { padding: 80px 10%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .service,
+  .service.service-summary,
   .service-link:hover .service,
   .service-link:focus-visible .service {
     transition: none;
     transform: none;
   }
 
-  .service::before,
-  .service-link:hover .service::before,
-  .service-link:focus-visible .service::before {
+  .service.service-summary::before,
+  .service-link:hover .service.service-summary::before,
+  .service-link:focus-visible .service.service-summary::before {
     animation: none;
     opacity: 0.12;
   }
