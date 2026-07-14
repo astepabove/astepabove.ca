@@ -1,7 +1,7 @@
 ---
 title: Escalator & Moving Walkway Repairs
 summary: Damaged tread restoration, engineered repair procedures, paint correction, professional cleaning, and packaging logistics for escalator and moving walkway components.
-card_image: /images/cleaning.jpg
+card_image: /images/escalators-card-image.jpg
 weight: 1
 ---
 
