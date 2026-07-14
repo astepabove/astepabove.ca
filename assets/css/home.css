@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - var(--site-header-height, 80px));
   background: linear-gradient(135deg, #081a2d 0%, #0a2540 42%, #13385f 100%);
   color: var(--text-light);
   text-align: center;
@@ -203,11 +203,11 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: calc(100svh - 80px);
+    min-height: calc(100svh - var(--site-header-height, 80px));
   }
 
   #services {
-    min-height: calc(50svh - 80px);
+    min-height: calc(50svh - var(--site-header-height, 80px));
   }
 
   .services-grid {

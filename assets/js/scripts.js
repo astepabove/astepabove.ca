@@ -5,14 +5,27 @@ function toggleMenu() {
   if (!navMenu || !menuToggle) return;
   navMenu.classList.toggle('active');
   menuToggle.classList.toggle('active');
+  updateSiteHeaderHeight();
 }
 
 window.toggleMenu = toggleMenu;
+
+function updateSiteHeaderHeight() {
+  const siteHeader = document.querySelector('.site-header');
+  if (!siteHeader) return;
+
+  document.documentElement.style.setProperty(
+    '--site-header-height',
+    `${siteHeader.getBoundingClientRect().height}px`
+  );
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('nav-menu');
   const menuToggle = document.querySelector('.menu-toggle');
   if (!menuToggle || !navMenu) return;
+
+  updateSiteHeaderHeight();
 
   menuToggle.addEventListener('click', (event) => {
     event.preventDefault();
@@ -182,7 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const maxOffset = 220;
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+  const maxOffset = isMobile ? 72 : 220;
+  const scale = isMobile ? 1.08 : 1.18;
   let ticking = false;
 
   function updateParallax() {
@@ -191,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progress = Math.min(1, Math.max(0, (viewportHeight - rect.top) / (viewportHeight + rect.height)));
     const offset = (progress - 0.5) * maxOffset;
 
-    heroVideo.style.transform = `translate3d(0, ${offset}px, 0) scale(1.18)`;
+    heroVideo.style.transform = `translate3d(0, ${offset}px, 0) scale(${scale})`;
     ticking = false;
   }
 
