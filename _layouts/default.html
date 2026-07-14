@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="{{ site.theme_color }}">
+  <link rel="icon" type="image/png" href="{{ '/images/logo.png' | relative_url }}">
   <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   {% if page.custom_css %}
-    <link rel="stylesheet" href="{{ page.custom_css | relative_url }}">
+    <link rel="stylesheet" href="{{ page.custom_css | relative_url }}?v={{ site.time | date: '%s' }}">
   {% endif %}
-  <style>
-    :root {
-      --primary: {{ site.theme_color }};
-      --accent: {{ site.accent_color }};
-    }
-  </style>
 </head>
 <body class="page {{ layout.bodyClass }}">
 

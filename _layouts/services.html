@@ -25,7 +25,12 @@ bodyClass: "page-services"
     <div class="col-12 col-md-6 mb-3">
       <a class="service-link" href="{{ service.url | relative_url }}">
         <div class="service service-summary">
-          <div class="service-content">
+          {% if service.card_image %}
+          <div class="service-media">
+            <img src="{{ service.card_image | relative_url }}" alt="{{ service.title }} preview" />
+          </div>
+          {% endif %}
+          <div class="service-content service-card-body">
             <h2 class="service-title">{{ service.title }}</h2>
             <p>{{ service.summary | default: service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
           </div>

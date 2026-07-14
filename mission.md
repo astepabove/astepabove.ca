@@ -1,7 +1,6 @@
 ---
-layout: default
 title: Our Mission
-permalink: /mission/
+layout: default
 custom_css: /assets/css/mission.css
 ---
 
@@ -19,5 +18,7 @@ custom_css: /assets/css/mission.css
     <p>
       The result? Steps that come out looking brand new—so convincing that customers have actually thought they received new ones. The refurbished steps are so sharp, the matching sets look outdated and worn. That’s the power of true craftsmanship, paired with decades of experience and an uncompromising mission: be the best in the industry, set the standard others chase, and provide the highest quality.
     </p>
+    <br>
+    <p><strong>- Bryan Bigham, President</strong></p>
   </div>
 </div>

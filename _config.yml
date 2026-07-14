@@ -10,6 +10,7 @@ accent_color: "#20a4f3" # High-visibility Blue/Teal
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 permalink: pretty
 

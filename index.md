@@ -6,9 +6,14 @@ custom_css: /assets/css/home.css
 
 <!-- Hero Section -->
 <section class="hero">
-  <h1>Restore with Confidence</h1>
-  <p>Our team repairs and refinishes escalator components to exceed code requirements and perform reliably in demanding environments.</p>
-  <a href="#contact" class="btn">Get In Touch</a>
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-hidden="true">
+    <source src="{{ '/assets/videos/escalator-hero.mp4' | relative_url }}" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1>Restore with Confidence</h1>
+    <p>Our team repairs and refinishes escalator components to exceed code requirements and perform reliably in demanding environments.</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </div>
 </section>
 
 <!-- Services Section -->
@@ -19,8 +24,15 @@ custom_css: /assets/css/home.css
     {% for service in sorted_services %}
     <a class="service-card-link" href="{{ service.url | relative_url }}">
       <div class="service-card">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.summary | default: service.excerpt | markdownify | strip_html | truncate: 140 }}</p>
+        {% if service.card_image %}
+        <div class="service-card-media">
+          <img src="{{ service.card_image | relative_url }}" alt="{{ service.title }} preview">
+        </div>
+        {% endif %}
+        <div class="service-card-content">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.summary | default: service.excerpt | markdownify | strip_html | truncate: 140 }}</p>
+        </div>
       </div>
     </a>
     {% endfor %}
