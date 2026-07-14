@@ -203,7 +203,11 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: calc(100dvh - 80px);
+    min-height: calc(100svh - 80px);
+  }
+
+  #services {
+    min-height: calc(50svh - 80px);
   }
 
   .services-grid {
