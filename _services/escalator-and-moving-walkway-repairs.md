@@ -19,8 +19,7 @@ In our welding and machining department we repair tread grooves of any depth wit
   <img src="/images/welding-repairs-1.jpg" alt="Step Repairs">
 </div>
 
-
-### Engineering 
+### Engineering
 
 Engineered Escalator Step Repairs You Can Trust
 
@@ -36,7 +35,7 @@ Our commitment to quality includes:
 - Precision inspection and quality control throughout the repair process.
 - Professional welding and finishing by experienced Red Seal tradespeople.
 - Detailed documentation available to support compliance and traceability.
-- Defensible from a legal standpoint and backed by extensive engineering liability. 
+- Defensible from a legal standpoint and backed by extensive engineering liability.
 
 Whether you're extending the service life of existing escalator steps or reducing replacement costs, our engineered repair program delivers a dependable, code-compliant solution without compromising safety or performance.
 
@@ -44,7 +43,7 @@ When safety, compliance, and reliability matter, trust A Step Above Industrial I
 
 ![Engineering](/images/engineering.png)
 
-### Paint Correction 
+### Paint Correction
 
 Factory-Quality Epoxy Refinishing
 

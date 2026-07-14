@@ -7,7 +7,12 @@
   --site-header-height: 80px;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
@@ -52,9 +57,16 @@ body {
   color: var(--text-light);
 }
 
-.logo-text span { color: var(--accent); margin-left: 5px; }
+.logo-text span {
+  color: var(--accent);
+  margin-left: 5px;
+}
 
-.main-menu { display: flex; align-items: center; }
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
 .main-menu a {
   color: var(--text-light);
   text-decoration: none;
@@ -65,7 +77,9 @@ body {
   padding: 8px 12px;
 }
 
-.main-menu a:hover { color: var(--accent); }
+.main-menu a:hover {
+  color: var(--accent);
+}
 
 .menu-toggle {
   display: none;
@@ -101,8 +115,14 @@ body {
   border-top: 4px solid var(--accent);
 }
 
-.site-footer p { margin-bottom: 10px; }
-.site-footer a { color: var(--text-light); text-decoration: none; }
+.site-footer p {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
 
 .btn {
   display: inline-block;
@@ -117,9 +137,13 @@ body {
   cursor: pointer;
 }
 
-.btn:hover { background-color: #118ab2; }
+.btn:hover {
+  background-color: #118ab2;
+}
 
-section { padding: 80px 10%; }
+section {
+  padding: 80px 10%;
+}
 
 .section-title {
   text-align: center;
@@ -139,18 +163,49 @@ section { padding: 80px 10%; }
   margin: 15px auto 0;
 }
 
-.container { width: min(1100px, 92%); margin: 0 auto; }
-.row { display: flex; flex-wrap: wrap; gap: 20px; }
-.justify-content-start { justify-content: flex-start; }
-.col-12 { width: 100%; }
-.pt-6 { padding-top: 48px; }
-.pb-6 { padding-bottom: 48px; }
-.mb-3 { margin-bottom: 20px; }
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
 
-.intro { padding: 48px 0 20px; }
-.intro h1:not(.section-title) { color: var(--primary); margin-bottom: 12px; }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-.page-services .intro { padding: 60px 0 0; }
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.pt-6 {
+  padding-top: 48px;
+}
+
+.pb-6 {
+  padding-bottom: 48px;
+}
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.intro {
+  padding: 48px 0 20px;
+}
+
+.intro h1:not(.section-title) {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.page-services .intro {
+  padding: 60px 0 0;
+}
 
 .service {
   background: #ffffff;
@@ -192,13 +247,11 @@ section { padding: 80px 10%; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: repeating-linear-gradient(
-    -28deg,
-    rgba(32, 164, 243, 0.14) 0,
-    rgba(32, 164, 243, 0.14) 8px,
-    transparent 8px,
-    transparent 22px
-  );
+  background-image: repeating-linear-gradient(-28deg,
+      rgba(32, 164, 243, 0.14) 0,
+      rgba(32, 164, 243, 0.14) 8px,
+      transparent 8px,
+      transparent 22px);
   background-size: 100% 200%;
   animation: escalator-treads 7s linear infinite;
   opacity: 0.18;
@@ -241,20 +294,33 @@ section { padding: 80px 10%; }
   position: relative;
   z-index: 1;
 }
-.service-title { margin-bottom: 10px; font-size: 1.25rem; }
-.service-title { color: var(--primary); }
-.service-single .title { color: var(--primary); margin-bottom: 16px; }
+
+.service-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.service-title {
+  color: var(--primary);
+}
+
+.service-single .title {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
 
 @keyframes escalator-treads {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 0 120px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .service.service-summary,
   .service-link:hover .service,
   .service-link:focus-visible .service {
@@ -278,7 +344,10 @@ section { padding: 80px 10%; }
   padding: clamp(20px, 3vw, 40px);
 }
 
-.content a { text-decoration: underline; }
+.content a {
+  text-decoration: underline;
+}
+
 .content img {
   max-width: 100%;
   height: auto;
@@ -440,7 +509,9 @@ section { padding: 80px 10%; }
   }
 }
 
-.content em { font-style: italic; }
+.content em {
+  font-style: italic;
+}
 
 .content p {
   font-size: 1rem;
@@ -450,8 +521,8 @@ section { padding: 80px 10%; }
   color: #4a5568;
 }
 
-.content h2 + p,
-.content h3 + p {
+.content h2+p,
+.content h3+p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.56;
@@ -469,9 +540,17 @@ section { padding: 80px 10%; }
   margin-bottom: 14px;
 }
 
-.content h1 { font-size: 2rem; }
-.content h2 { font-size: 1.6rem; }
-.content h3 { font-size: 1.25rem; }
+.content h1 {
+  font-size: 2rem;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+}
 
 .content ul,
 .content ol {
@@ -479,8 +558,13 @@ section { padding: 80px 10%; }
   padding-left: 20px;
 }
 
-.content ul { list-style: disc; }
-.content ol { list-style: decimal; }
+.content ul {
+  list-style: disc;
+}
+
+.content ol {
+  list-style: decimal;
+}
 
 .content li {
   margin-bottom: 6px;
@@ -522,18 +606,33 @@ section { padding: 80px 10%; }
 }
 
 @media (min-width: 768px) {
-  .col-md-6 { width: calc(50% - 10px); }
-  .col-md-7 { width: calc(58.333333% - 10px); }
-  .col-md-5 { width: calc(41.666667% - 10px); }
-  .col-md-8 { width: calc(66.666667% - 10px); }
+  .col-md-6 {
+    width: calc(50% - 10px);
+  }
+
+  .col-md-7 {
+    width: calc(58.333333% - 10px);
+  }
+
+  .col-md-5 {
+    width: calc(41.666667% - 10px);
+  }
+
+  .col-md-8 {
+    width: calc(66.666667% - 10px);
+  }
 }
 
 @media (min-width: 992px) {
-  .col-lg-6 { width: calc(50% - 10px); }
+  .col-lg-6 {
+    width: calc(50% - 10px);
+  }
 }
 
 @media (max-width: 768px) {
-  .menu-toggle { display: flex; }
+  .menu-toggle {
+    display: flex;
+  }
 
   .site-header {
     flex-direction: column;
@@ -631,10 +730,21 @@ section { padding: 80px 10%; }
     transform: translateY(0);
   }
 
-  .main-menu.active a:nth-child(1) { transition-delay: 0.04s; }
-  .main-menu.active a:nth-child(2) { transition-delay: 0.08s; }
-  .main-menu.active a:nth-child(3) { transition-delay: 0.12s; }
-  .main-menu.active a:nth-child(4) { transition-delay: 0.16s; }
+  .main-menu.active a:nth-child(1) {
+    transition-delay: 0.04s;
+  }
+
+  .main-menu.active a:nth-child(2) {
+    transition-delay: 0.08s;
+  }
+
+  .main-menu.active a:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  .main-menu.active a:nth-child(4) {
+    transition-delay: 0.16s;
+  }
 
   .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
