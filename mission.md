@@ -1,6 +1,8 @@
 ---
 title: Our Mission
 layout: default
+description: Learn how A Step Above Industrial Inc. combines Red Seal millwright and welding expertise to deliver premium escalator step refurbishment beyond minimum code standards.
+image: /images/escalators-card-image.jpg
 custom_css: /assets/css/mission.css
 ---
 

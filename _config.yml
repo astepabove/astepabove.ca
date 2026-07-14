@@ -1,6 +1,19 @@
 title: A Step Above Industrial Inc.
+description: Expert escalator and moving walkway repairs, mechanical installation, welding, and mobile industrial support across BC. Reliable service focused on safety, performance, and code compliance.
+url: "https://astepabove.ca"
 email: astepabove.ca@gmail.com
 phone: "778-580-7996"
+logo: /images/logo.png
+image: /images/escalators-card-image.jpg
+twitter:
+  card: summary_large_image
+organization:
+  type: Organization
+  name: A Step Above Industrial Inc.
+  url: https://astepabove.ca
+  logo: /images/logo.png
+  email: astepabove.ca@gmail.com
+  telephone: "+1-778-580-7996"
 
 # Theme settings
 theme_color: "#0a2540" # Deep Navy Blue
@@ -10,6 +23,8 @@ accent_color: "#20a4f3" # High-visibility Blue/Teal
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-toc
 
 permalink: pretty

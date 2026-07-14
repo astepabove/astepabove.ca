@@ -1,7 +1,7 @@
 ---
 title: Industrial Installation & Mechanical Services
-summary: Industrial installation and mechanical services for equipment upgrades, structural work, precision alignment, commissioning, and complex shutdown projects.
-card_image: /images/install-0.jpg
+description: Industrial installation and mechanical services for equipment upgrades, structural work, precision alignment, commissioning, and complex shutdown projects.
+image: /images/install-0.jpg
 weight: 4
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+description: A Step Above Industrial Inc. provides expert escalator and moving walkway repairs, welding, mechanical services, and mobile industrial support across BC.
+image: /images/escalators-card-image.jpg
 custom_css: /assets/css/home.css
 ---
 
@@ -24,32 +26,20 @@ custom_css: /assets/css/home.css
     {% for service in sorted_services %}
     <a class="service-card-link" href="{{ service.url | relative_url }}">
       <div class="service-card">
-        {% if service.card_image %}
+        {% if service.image %}
         <div class="service-card-media">
-          <img src="{{ service.card_image | relative_url }}" alt="{{ service.title }} preview">
+          <img src="{{ service.image | relative_url }}" alt="{{ service.title }} preview">
         </div>
         {% endif %}
         <div class="service-card-content">
           <h3>{{ service.title }}</h3>
-          <p>{{ service.summary | default: service.excerpt | markdownify | strip_html | truncate: 140 }}</p>
+          <p>{{ service.description | default: service.excerpt | markdownify | strip_html | truncate: 140 }}</p>
         </div>
       </div>
     </a>
     {% endfor %}
   </div>
 </section>
-
-<!-- About Section -->
-<!-- <section id="about" class="about-section">
-  <h2 class="section-title">Who We Are</h2>
-  <p style="max-width: 800px; font-size: 1.1rem; margin-bottom: 20px;">
-    Welcome to A Step Above Industrial Inc., your trusted provider for specialized industrial escalator and autowalk mechanical infrastructure overhauls. Our skilled workforce is dedicated to resolving complex structural step damage through engineering precision.
-  </p>
-  <div class="mission-box">
-    <h4>Our Mission</h4>
-    <p>"To enhance escalator safety, functionality, and longevity through expert craftsmanship and innovative repair solutions."</p>
-  </div>
-</section> -->
 
 <!-- Contact Section -->
 <section id="contact" style="text-align: center;">

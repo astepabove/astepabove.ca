@@ -1,7 +1,7 @@
 ---
 title: Mobile Industrial Service & Support
-summary: Mobile industrial repair and support services delivered by fully equipped service trucks for on-site maintenance, field fabrication, and emergency response.
-card_image: /images/crane.jpg
+description: Mobile industrial repair and support services delivered by fully equipped service trucks for on-site maintenance, field fabrication, and emergency response.
+image: /images/crane.jpg
 weight: 3
 ---
 

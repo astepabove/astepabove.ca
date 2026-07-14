@@ -1,7 +1,7 @@
 ---
 title: Welding & Fabrication
-summary: Industrial welding and fabrication services for custom components, structural work, production jobs, and large-scale assemblies built to engineered specifications.
-card_image: /images/weld-1.jpg
+description: Industrial welding and fabrication services for custom components, structural work, production jobs, and large-scale assemblies built to engineered specifications.
+image: /images/weld-1.jpg
 weight: 2
 ---
 

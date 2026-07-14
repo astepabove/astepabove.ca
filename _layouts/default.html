@@ -5,11 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="{{ site.theme_color }}" />
-  <meta property="og:image" content="https://astepabove.ca/images/escalators-card-image.jpg" />
+  {% seo %}
+  {% if site.organization %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{{ site.organization.type | default: 'Organization' }}",
+      "name": "{{ site.organization.name | default: site.title }}",
+      "url": "{{ site.organization.url | default: site.url }}",
+      "logo": "{{ site.organization.logo | default: site.logo | absolute_url }}",
+      "email": "{{ site.organization.email | default: site.email }}",
+      "telephone": "{{ site.organization.telephone | default: site.phone }}"
+    }
+  </script>
+  {% endif %}
   <link rel="icon" type="image/png" href="{{ '/images/logo.png' | relative_url }}" />
-  <title>
-    {% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}
-  </title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
