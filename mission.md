@@ -14,7 +14,7 @@ custom_css: /assets/css/mission.css
     </p>
     <br>
     <p>
-      But this isn’t just about making steps shine. Refurbishment means going green—recycling thousands of steps that would otherwise be tossed into landfills. It means keeping work local, feeding our community, and helping customers save money by paying less than the cost of new steps—without sacrificing safety or performance. Every step we touch doesn’t just meet ASME A17.1-2019 / CSA B44:19 codes… our standards are set higher. Why? Because those codes are the minimum to avoid condemnation. We aim far above “minimum.”
+      But this isn’t just about making steps shine. Refurbishment means going green—recycling thousands of steps that would otherwise be tossed into landfills. It means keeping work local, feeding our community, and helping customers save money by paying less than the cost of new steps—without sacrificing safety or performance. Every step we touch doesn’t just meet ASME A17.1 / CSA B44 codes… our standards are set higher. Why? Because those codes are the minimum to avoid condemnation. We aim far above “minimum.”
     </p>
     <br>
     <p>
